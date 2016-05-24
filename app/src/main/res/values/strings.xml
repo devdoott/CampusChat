@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Chat_Application_Admin</string>
+    <string name="chat">Customer Support</string>
+    <string name="logout">Logout</string>
+    <string name="lastin">lastin</string>
+</resources>
