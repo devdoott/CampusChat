@@ -1,6 +1,5 @@
-package com.buyhatke.chat_application_admin;
+package com.buyhatke.chatfirebaseadminlibrary;
 
-import android.graphics.Bitmap;
 import android.net.Uri;
 
 /**
@@ -9,7 +8,6 @@ import android.net.Uri;
 public class ChatMessage implements Comparable<ChatMessage>  {
     private String message;
     private int type;
-    private Bitmap image;
     private boolean isMe;
     private Long time;
     private int seen;
@@ -20,7 +18,6 @@ public class ChatMessage implements Comparable<ChatMessage>  {
         this.time=time;
         this.seen=seen;
         this.type=0;
-        this.image=null;
         this.imageUri=null;
     }
     ChatMessage(Uri message, boolean isMe, long time, int seen){
@@ -76,10 +73,6 @@ public class ChatMessage implements Comparable<ChatMessage>  {
         return type;
     }
 
-    public Bitmap getImage() {
-        return image;
-    }
-
     public int getSeen() {
         return seen;
     }
@@ -94,10 +87,6 @@ public class ChatMessage implements Comparable<ChatMessage>  {
 
     public void setType(int type) {
         this.type = type;
-    }
-
-    public void setImage(Bitmap image) {
-        this.image = image;
     }
 
     public void setMe(boolean me) {

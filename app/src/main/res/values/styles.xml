@@ -8,4 +8,23 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="MyCustomTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="actionOverflowButtonStyle">@style/MyCustomTheme.OverFlow</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyCustomTheme.OverFlow</item>
+    </style>
+
+    <style name="MyCustomTheme.OverFlow" parent="@style/Widget.AppCompat.ActionButton.Overflow" >
+        <item name="android:src">@mipmap/my_overflow_image</item>
+    </style>
+
 </resources>

@@ -4,16 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/rootlayout"
-    android:background="#f1f5f6"
-    tools:context="com.buyhatke.chat_application_admin.ChatActivity">
+    android:background="#f1f5f6">
 
     <android.support.v7.widget.Toolbar android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
         android:layout_height="57dp"
         android:background="#003745"
         android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:theme="@style/MyCustomTheme"
+        app:popupTheme="@style/MyCustomTheme"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_alignParentTop="true"
@@ -41,7 +40,7 @@
         android:layout_alignParentLeft="false"
         android:layout_alignParentTop="false"
         android:layout_above="@+id/input"
-        android:listSelector="@android:color/transparent"
+        android:listSelector="@android:color/holo_red_light"
         android:divider="@null"
         android:layout_below="@+id/my_toolbar"
         android:paddingLeft="13dp"

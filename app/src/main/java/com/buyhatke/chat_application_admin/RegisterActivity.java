@@ -118,8 +118,8 @@ public class RegisterActivity extends AppCompatActivity {
                 if(task.isSuccessful()){
                     String uid=null;
                     String packageName=getPackageName().replace('.','%');
-                    User user=new User(packageName,name,uid=task.getResult().getUser().getUid(),0,Long.parseLong("0"));
-                    State.getDatabaseReference().child(packageName).child(uid).setValue(user);
+                    Admin admin=new Admin(packageName,name,emailId,uid=task.getResult().getUser().getUid());
+                    State.getDatabaseReference().child(packageName).child(uid).setValue(admin);
 
                     Toast.makeText(RegisterActivity.this,"Successfully created user account with uid: " +uid,Toast.LENGTH_SHORT).show();
 

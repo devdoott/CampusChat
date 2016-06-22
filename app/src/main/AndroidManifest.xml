@@ -13,17 +13,11 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".MainActivity">
-
-        </activity>
-        <activity
-            android:name=".ChatActivity"
-            android:parentActivityName=".MainActivity"
+        android:theme="@style/MyCustomTheme">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="landscape"
             android:windowSoftInputMode="adjustResize|stateHidden">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+
         </activity>
         <activity android:name=".LoginActivity" />
         <activity android:name=".RegisterActivity">

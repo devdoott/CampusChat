@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_margin="0dp"
     android:layout_height="wrap_content">
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Take a picture"
+        android:layout_gravity="center_horizontal"
         android:id="@+id/takepic"
-        />
+        android:padding="15dp"
+        android:textSize="15sp" />
     <Button
-        android:layout_width="match_parent"
+        android:padding="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Choose from gallery"
-        android:id="@+id/choose"/>
+        android:id="@+id/choose"
+        android:textSize="15sp" />
 
 </LinearLayout>

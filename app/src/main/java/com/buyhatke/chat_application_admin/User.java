@@ -44,17 +44,17 @@ public class User implements Comparable<User>{
         if(id.equals(another.getId()))return 0;
         if((this.unreadMessages==0&&another.getUnreadMessages()==0)||(this.unreadMessages!=0&&another.getUnreadMessages()!=0)){
             if(this.lastTime<another.getLastTime())
-                return  -1;
+                return  1;
             else if(this.lastTime>another.lastTime) {
-                return 1;
+                return  -1;
             }
             else return 0;
         }
         else {
             if(this.unreadMessages!=0)
-                return 1;
-            else if (another.getUnreadMessages()!=0){
                 return -1;
+            else if (another.getUnreadMessages()!=0){
+                return 1;
             }
             else {
                 return 0;
